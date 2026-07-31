@@ -2207,6 +2207,7 @@ textarea.w-select {
   --light-bg-two: #e8e7e5;
   --primary-color: #FFA004;
   --secondary-color: #E8E7E5;
+  --secondary_color: #fa8c16;
   --_letter-spacing---section-gap: 140px;
   --white-12: #ffffff1f;
   --white-24: #ffffff3d;
@@ -4789,7 +4790,8 @@ figure {
 }
 
 .expertise-icon-wrapper.two {
-  background-color: #fa8c16;
+  background-color: var(--secondary_color);
+  /* background-color: #384797; */
 }
 
 .expertise-icon-wrapper.three {
