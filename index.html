@@ -2906,204 +2906,194 @@
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
-                .faq-sap {
-                    background-color: #f7f7f7;
-                    padding: 80px 20px;
-                    font-family: 'Inter', sans-serif;
-                    color: #111;
-                }
+/* Base Section Styling */
+.faq-sap {
+  background-color: #f4f4f4; /* Adjusted to match original light grey */
+  padding: 100px 20px;
+  font-family: 'Inter', sans-serif;
+  color: #111;
+}
 
-                .container-sap {
-                    max-width: 1100px;
-                    margin: 0 auto;
-                    position: relative;
-                }
+/* Wider Container */
+.container-sap {
+  max-width: 1240px; /* Increased from 1100px to match the wide original look */
+  margin: 0 auto;
+  position: relative; 
+}
 
-                .subtitle-wrapper-sap {
-                    display: none;
-                }
+.subtitle-wrapper-sap { 
+  display: none; 
+} 
 
-                .section-title-sap {
-                    font-size: 56px;
-                    font-weight: 500;
-                    line-height: 1.05;
-                    letter-spacing: -2px;
-                    margin: 0 0 40px 0;
-                    max-width: 500px;
-                }
+/* Title adjustments for perfect 2-line wrap */
+.section-title-sap {
+  font-size: 64px; /* Increased size */
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -2.5px; /* Tighter tracking */
+  margin: 0 0 50px 0;
+  max-width: 650px; /* Forces exactly two lines like the original */
+}
 
-                .faq-tab-menu-sap {
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    display: inline-flex;
-                    background-color: #e8e8e8;
-                    padding: 6px;
-                    border-radius: 8px;
-                    gap: 5px;
-                    z-index: 10;
-                }
+/* Tabs Styling - Sleeker corners */
+.faq-tab-menu-sap {
+  position: absolute;
+  top: 12px;
+  right: 0;
+  display: inline-flex;
+  background-color: #e5e5e5;
+  padding: 6px;
+  border-radius: 6px; /* Less rounded */
+  gap: 4px;
+  z-index: 10;
+}
 
-                .faq-tab-link-sap {
-                    padding: 12px 24px;
-                    border-radius: 6px;
-                    font-size: 12px;
-                    font-weight: 600;
-                    text-transform: uppercase;
-                    letter-spacing: 0.5px;
-                    cursor: pointer;
-                    text-decoration: none;
-                    color: #000;
-                    transition: all 0.3s ease;
-                }
+.faq-tab-link-sap {
+  padding: 12px 24px;
+  border-radius: 4px; /* Less rounded */
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s ease;
+}
 
-                .faq-tab-link-sap.w--current-sap {
-                    background-color: #ffffff;
-                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-                }
+.faq-tab-link-sap.w--current-sap {
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
 
-                .faq-tab-pane-sap {
-                    display: none;
-                    animation: fadeIn 0.4s ease;
-                }
+.faq-tab-pane-sap {
+  display: none;
+  animation: fadeIn 0.4s ease;
+}
 
-                .faq-tab-pane-sap.w--tab-active-sap {
-                    display: block;
-                }
+.faq-tab-pane-sap.w--tab-active-sap {
+  display: block;
+}
 
-                @keyframes fadeIn {
-                    from {
-                        opacity: 0;
-                        transform: translateY(10px);
-                    }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
-                    to {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
-                }
+/* Tighter gap between FAQ cards */
+.faq-wrapper-sap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Reduced gap to match original */
+}
 
-                .faq-wrapper-sap {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 12px;
-                }
+/* FAQ Cards Base - Sharper edges */
+.faq-signle-card-sap {
+  background-color: #ebebeb; 
+  border-radius: 8px; /* Sleeker, less rounded edges */
+  transition: all 0.3s ease;
+}
 
-                .faq-signle-card-sap {
-                    background-color: #ededed;
-                    border-radius: 12px;
-                    transition: all 0.3s ease;
-                }
+.faq-question-wrap-sap {
+  display: flex;
+  align-items: center;
+  padding: 24px 30px; /* Wider padding */
+  cursor: pointer;
+  gap: 20px;
+}
 
-                .faq-question-wrap-sap {
-                    display: flex;
-                    align-items: center;
-                    padding: 24px;
-                    cursor: pointer;
-                    gap: 20px;
-                }
+.faq-question-sap {
+  font-size: 18px; /* Sleeker font size */
+  font-weight: 500;
+  color: #111;
+  user-select: none;
+}
 
-                .faq-question-sap {
-                    font-size: 20px;
-                    font-weight: 500;
-                    color: #111;
-                    user-select: none;
-                }
+/* Smaller, sleeker Plus Icon */
+.faq-icon-wrap-sap {
+  width: 28px; /* Reduced from 36px */
+  height: 28px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-                .faq-icon-wrap-sap {
-                    width: 36px;
-                    height: 36px;
-                    background-color: #ffffff;
-                    border-radius: 50%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    flex-shrink: 0;
-                    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-                }
+.faq-icon-sap {
+  width: 12px;
+  height: 12px;
+  transition: all 0.4s ease;
+}
 
-                .faq-icon-sap {
-                    width: 14px;
-                    height: 14px;
-                    transition: all 0.4s ease;
-                }
+/* Active State: Orange (#ffa004) Color Shift */
+.faq-signle-card-sap.active-sap .faq-icon-wrap-sap {
+  background-color: #ffa004; 
+  transform: rotate(45deg); 
+}
 
-                .faq-signle-card-sap.active-sap .faq-icon-wrap-sap {
-                    background-color: #ffa004;
-                    transform: rotate(45deg);
-                }
+.faq-signle-card-sap.active-sap .faq-icon-sap {
+  filter: brightness(0) invert(1); /* Turns the cross pure white for contrast */
+}
 
-                .faq-signle-card-sap.active-sap .faq-icon-sap {
-                    filter: invert(28%) sepia(85%) saturate(2250%) hue-rotate(240deg) brightness(85%) contrast(95%);
-                }
+/* FAQ Answer Dropdown Animation */
+.faq-answer-wrap-sap {
+  display: grid;
+  grid-template-rows: 0fr; 
+  transition: grid-template-rows 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-                .faq-answer-wrap-sap {
-                    display: grid;
-                    grid-template-rows: 0fr;
-                    transition: grid-template-rows 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-                }
+.faq-signle-card-sap.active-sap .faq-answer-wrap-sap {
+  grid-template-rows: 1fr; 
+}
 
-                .faq-signle-card-sap.active-sap .faq-answer-wrap-sap {
-                    grid-template-rows: 1fr;
-                }
+.faq-answer-content-sap {
+  overflow: hidden; 
+}
 
-                .faq-answer-content-sap {
-                    overflow: hidden;
-                }
+/* Inner White Box */
+.faq-answer-typography-sap {
+  background-color: #ffffff;
+  margin: 0 10px 10px 10px; /* Matches the 30px padding of the question wrapper */
+  padding: 24px 30px;
+  border-radius: 6px; /* Less rounded for sleekness */
+}
 
-                .faq-answer-typography-sap {
-                    background-color: #ffffff;
-                    margin: 0 24px 24px 24px;
-                    padding: 24px 30px;
-                    border-radius: 10px;
-                }
+.faq-answer-text-sap {
+  margin: 0;
+  color: #555;
+  font-size: 15px; /* Sleeker text size */
+  line-height: 1.6;
+  max-width: 900px;
+}
 
-                .faq-answer-text-sap {
-                    margin: 0;
-                    color: #555;
-                    font-size: 16px;
-                    line-height: 1.6;
-                }
+/* Responsive Design */
+@media (max-width: 991px) {
+  .faq-tab-menu-sap {
+    position: relative;
+    margin-bottom: 30px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .faq-tab-link-sap {
+    flex: 1;
+    text-align: center;
+  }
+  .section-title-sap {
+    font-size: 44px;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+}
 
-                @media (max-width: 991px) {
-                    .faq-tab-menu-sap {
-                        position: relative;
-                        margin-bottom: 30px;
-                        width: 100%;
-                        justify-content: space-between;
-                    }
-
-                    .faq-tab-link-sap {
-                        flex: 1;
-                        text-align: center;
-                    }
-
-                    .section-title-sap {
-                        font-size: 44px;
-                        margin-bottom: 20px;
-                    }
-                }
-
-                @media (max-width: 479px) {
-                    .section-title-sap {
-                        font-size: 32px;
-                        letter-spacing: -1px;
-                    }
-
-                    .faq-question-sap {
-                        font-size: 16px;
-                    }
-
-                    .faq-question-wrap-sap {
-                        padding: 16px;
-                        gap: 15px;
-                    }
-
-                    .faq-answer-typography-sap {
-                        margin: 0 16px 16px 16px;
-                        padding: 20px;
-                    }
-                }
+@media (max-width: 479px) {
+  .section-title-sap { font-size: 32px; letter-spacing: -1px; }
+  .faq-question-sap { font-size: 16px; }
+  .faq-question-wrap-sap { padding: 16px 20px; gap: 15px; }
+  .faq-answer-typography-sap { margin: 0 20px 20px 20px; padding: 20px; }
+}
             </style>
             <script>
                 document.addEventListener("DOMContentLoaded", () => {
