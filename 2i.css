@@ -2206,7 +2206,7 @@ textarea.w-select {
   --_letter-spacing---button: -.6px;
   --light-bg-two: #e8e7e5;
   --primary-color: #FFA004;
-  --secondary-color: #b5f2e0;
+  --secondary-color: #E8E7E5;
   --_letter-spacing---section-gap: 140px;
   --white-12: #ffffff1f;
   --white-24: #ffffff3d;
@@ -8169,7 +8169,7 @@ figure {
 
 .case-studies-details-typography {
   grid-row-gap: 30px;
-  /* background-color: var(--secondary-color); */
+  background-color: var(--secondary-color);
   background-color: #E8E7E5;
   border-radius: 4px;
   flex-flow: column;
