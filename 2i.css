@@ -2240,7 +2240,7 @@ textarea.w-select {
   grid-row-gap: 16px;
   grid-column-gap: 16px;
   grid-template-rows: auto auto;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   display: grid;
 }
@@ -3843,7 +3843,7 @@ figure {
 }
 
 .section.main-pricing {
-  padding-top: 210px;
+  padding-top: 20px;
   padding-bottom: var(--_letter-spacing---normal);
 }
 
@@ -6487,11 +6487,13 @@ figure {
 }
 
 .about-core-values-icon-single.one {
-  background-color: var(--secondary-color);
+  /* background-color: rgba(128, 128, 128, 0.316); */
+  background-color: rgb(20 34 202 / 38%);
 }
 
 .about-core-values-icon-single.two {
-  background-color: var(--primary-color);
+  /* background-color: rgba(128, 128, 128, 0.316); */
+  background-color: rgb(69 218 176 / 32%);
 }
 
 .about-core-values-icon {
@@ -8240,7 +8242,7 @@ figure {
 
 .case-studies-details-rich-content {
   width: 100%;
-  max-width: 870px;
+  max-width: 2000px;
 }
 
 .case-studies-details-rich-text h2 {
